@@ -54,17 +54,16 @@ sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml
 
 15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)
 
- `<filter>`  
-     `<filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name>`  
+`<filter>`    
+   `<filter-name>ApplicationInsightsWebFilter</filter-name>`    
     `<filter-class>`  
-        `com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter`
+         `com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter`  
   `</filter-class>`  
 `</filter>`
 
 `<filter-mapping>`
-
-   `<filter-name>ApplicationInsightsWebFilter</filter-name>`
-   `<url-pattern>/*</url-pattern>`
+   `<filter-name>ApplicationInsightsWebFilter</filter-name>`    
+   `<url-pattern>/*</url-pattern>`  
 `</filter-mapping>`
 
 
