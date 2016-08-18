@@ -42,15 +42,14 @@ In this exercise, you will learn how to configure Application Insights to monito
 
 ## Configuring Tomcat
 
-13. Now, open a terminal window and enter the following commands
+13. Now, open a terminal window and enter the following commands  
+`sudo cp /<your home directory>/AI\ SDK/*.* /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/lib`  
 
-sudo cp  /&lt;your home directory&gt;/AI\ SDK/\*.\* /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/lib
-
-Note: You can use CTRL+TAB to auto complete paths
+Note: You can use CTRL+TAB to auto complete paths  
 
 14. We need to add HTTP filter to our web.xml. Use the following command to edit the file
 
-sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml
+`sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml`
 
 15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)
 
