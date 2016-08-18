@@ -80,8 +80,7 @@ Application Insights can also help you understand how your customers are using y
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-10.png?raw=true)
  
 20. From a terminal window, type the following command
-
-sudo gedit /var/lib/tomcat7/webapps/myshuttledev/index.jsp
+`sudo gedit /var/lib/tomcat7/webapps/myshuttledev/index.jsp`
 
 21. Paste the code within the &lt;head&gt; &lt;/head&gt; tags as shown below:  
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-11.png?raw=true)
