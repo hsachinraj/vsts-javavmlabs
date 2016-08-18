@@ -54,25 +54,19 @@ sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml
 
 15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)
 
-&lt;filter&gt;
+ `<filter>`  
+     `<filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name>`  
+    `<filter-class>`  
+        `com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter`
+  `</filter-class>`  
+`</filter>`
 
-  &lt;filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name&gt;
+`<filter-mapping>`
 
-  &lt;filter-class&gt;
+   `<filter-name>ApplicationInsightsWebFilter</filter-name>`
+   `<url-pattern>/*</url-pattern>`
+`</filter-mapping>`
 
-    com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter
-
-  &lt;/filter-class&gt;
-
-&lt;/filter&gt;
-
-&lt;filter-mapping&gt;
-
-   &lt;filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name&gt;
-
-   &lt;url-pattern&gt;/\*&lt;/url-pattern&gt;
-
-&lt;/filter-mapping&gt;
 
 16. Save the file.
 17. Now AI Is configured. We simply need to restart the Tomcat server for AI to take effect. Use the following command to restart the Tomcat server
@@ -95,7 +89,7 @@ Application Insights can also help you understand how your customers are using y
 
 sudo gedit /var/lib/tomcat7/webapps/myshuttledev/index.jsp
 
-21. Paste the code within the &lt;head&gt; &lt;/head&gt; tags as shown below:
+21. Paste the code within the &lt;head&gt; &lt;/head&gt; tags as shown below:  
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-11.png?raw=true)
 
 3. Restart the tomcat server as specified in step 17.
