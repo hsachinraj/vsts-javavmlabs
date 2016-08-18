@@ -85,9 +85,10 @@ Application Insights can also help you understand how your customers are using y
 21. Paste the code within the &lt;head&gt; &lt;/head&gt; tags as shown below:  
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-11.png?raw=true)
 
-3. Restart the tomcat server as specified in step 17.
-4. Login to the web application and navigate the pages to generate some traffic
-5. In a couple of minutes, you will start to see the pages usage statistics on the AI resource page
+3. Restart the tomcat server as specified in step 17.  
+4. Login to the web application and navigate the pages to generate some traffic  
+5. In a couple of minutes, you will start to see the pages usage statistics on the AI resource page  
+
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-12.png?raw=true)
 
 To find out more on other features on Application Insights including setting up availability, custom events and metrics, check out the product documentation pages on - [https://azure.microsoft.com/en-us/documentation/services/application-insights/](https://azure.microsoft.com/en-us/documentation/services/application-insights/)
