@@ -42,39 +42,35 @@ In this exercise, you will learn how to configure Application Insights to monito
 
 ## Configuring Tomcat
 
-13. Now, open a terminal window and enter the following commands  
+1. Now, open a terminal window and enter the following commands  
 `sudo cp /<your home directory>/AI\ SDK/*.* /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/lib`  
 
-Note: You can use CTRL+TAB to auto complete paths  
+    Note: You can use CTRL+TAB to auto complete paths
+    
+2. We need to add HTTP filter to our web.xml. Use the following command to edit the file
+    `sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml`  
 
-14. We need to add HTTP filter to our web.xml. Use the following command to edit the file
-
-`sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml`
-
-15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)
-
-`<filter>`    
-   `<filter-name>ApplicationInsightsWebFilter</filter-name>`    
-    `<filter-class>`  
-         `com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter`  
-  `</filter-class>`  
-`</filter>`
-
+15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)  
+    `<filter>`    
+     `<filter-name>ApplicationInsightsWebFilter</filter-name>`    
+        `<filter-class>`  
+            `com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter`  
+    `</filter-class>`  
+    `</filter>`
 `<filter-mapping>`
    `<filter-name>ApplicationInsightsWebFilter</filter-name>`    
    `<url-pattern>/*</url-pattern>`  
-`</filter-mapping>`
-
+`</filter-mapping>`  
 
 16. Save the file.
-17. Now AI Is configured. We simply need to restart the Tomcat server for AI to take effect. Use the following command to restart the Tomcat server
-
-sudo service tomcat7 restart
+17. Now AI Is configured. We simply need to restart the Tomcat server for AI to take effect. Use the following command to restart the Tomcat server  
+    `sudo service tomcat7 restart`
 
 18. Once tomcat is restarted, go to your web application – [https://localhost:8080/myshuttledev](https://localhost:8080/myshuttledev) and generate some traffic by logging in and accessing the fares history page.
 
-In a few minutes, you will see HTTP request data appearing on the overview blade of the Application Insights resource page
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-9.png?raw=true)
+    In a few minutes, you will see HTTP request data appearing on the overview blade of the Application Insights resource page  
+    
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-9.png?raw=true)
 
 ## **Understanding application usage**
 
