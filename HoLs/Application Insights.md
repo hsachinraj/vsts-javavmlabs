@@ -30,8 +30,77 @@ In this exercise, you will learn how to configure Application Insights to monito
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-5.png?raw=true)
 
 9. Select **Extract** to complete extracting. Once the Extraction is completed, select **Show the Files** option or just simply quit and use the **File Manager** to go to your home folder.
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-6.png?raw=true)
 
 10. Open the **AI SDK** folder and you will see a number of JAR files downloaded. Right-click the **Application Insights.xml** file and select **Open with – Open with &quot;gedit&quot;** option
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-7.png?raw=true)
 
+11. This will open the file in gedit. Look for the &lt;InstrumentationKey&gt; tag. Copy the AI Instrumentation key selected in step 5 and paste it between the tags
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-8.png?raw=true)
 
+12. Save the file and quit Gedit
 
+## Configuring Tomcat
+
+13. Now, open a terminal window and enter the following commands
+
+sudo cp  /&lt;your home directory&gt;/AI\ SDK/\*.\* /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/lib
+
+Note: You can use CTRL+TAB to auto complete paths
+
+14. We need to add HTTP filter to our web.xml. Use the following command to edit the file
+
+sudo gedit /var/lib/tomcat7/webapp/myshuttledev/WEB-INF/web.xml
+
+15. Copy the following lines provided below. You may want to open this link in Firefox within the VM (to copy and paste)
+
+&lt;filter&gt;
+
+  &lt;filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name&gt;
+
+  &lt;filter-class&gt;
+
+    com.microsoft.applicationinsights.web.internal.WebRequestTrackingFilter
+
+  &lt;/filter-class&gt;
+
+&lt;/filter&gt;
+
+&lt;filter-mapping&gt;
+
+   &lt;filter-name&gt;ApplicationInsightsWebFilter&lt;/filter-name&gt;
+
+   &lt;url-pattern&gt;/\*&lt;/url-pattern&gt;
+
+&lt;/filter-mapping&gt;
+
+16. Save the file.
+17. Now AI Is configured. We simply need to restart the Tomcat server for AI to take effect. Use the following command to restart the Tomcat server
+
+sudo service tomcat7 restart
+
+18. Once tomcat is restarted, go to your web application – [https://localhost:8080/myshuttledev](https://localhost:8080/myshuttledev) and generate some traffic by logging in and accessing the fares history page.
+
+In a few minutes, you will see HTTP request data appearing on the overview blade of the Application Insights resource page
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-9.png?raw=true)
+
+## **Understanding application usage**
+
+Application Insights can also help you understand how your customers are using your web app, what geographies they&#39;re coming from, how much time they spend in your site and more. This can be easily done by adding a Javascript snippet to the web pages that you want to track.
+
+19. From the AI resource on the Azure portal, select **Quickstart** iconto open the **Getting Started** page and then select the &quot; **Get code to monitor my web pages**&quot; link. This will open an another blade with the Javascript code that you need to add to your webpages. Copy the code
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-10.png?raw=true)
+ 
+20. From a terminal window, type the following command
+
+sudo gedit /var/lib/tomcat7/webapps/myshuttledev/index.jsp
+
+21. Paste the code within the &lt;head&gt; &lt;/head&gt; tags as shown below:
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-11.png?raw=true)
+
+3. Restart the tomcat server as specified in step 17.
+4. Login to the web application and navigate the pages to generate some traffic
+5. In a couple of minutes, you will start to see the pages usage statistics on the AI resource page
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/AI-12.png?raw=true)
+
+To find out more on other features on Application Insights including setting up availability, custom events and metrics, check out the product documentation pages on - [https://azure.microsoft.com/en-us/documentation/services/application-insights/](https://azure.microsoft.com/en-us/documentation/services/application-insights/)
