@@ -108,7 +108,9 @@ Creating your Visual Studio Team Services account
     Pick a different name and try again.
 
     Creating a new account is typically fast and can take as little as a few
-    seconds to complete. Once done, you will be directed to the **Create
+    seconds to complete. 
+    
+1. Once done, you will be directed to the **Create
     your first project** page that helps you create your first Team Project.
     Continue to the steps after the following screen shot to fill in the
     details.
