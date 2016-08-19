@@ -139,13 +139,13 @@ Now we can see that the agent is online under default agent pool.
 The agent will run until you stop it by pressing Ctrl +C and/or shutdown
 the VM.
 
-`**Note**: You will need to configure the agent only once. To run the
+<pre>**Note**: You will need to configure the agent only once. To run the
  agent, use **./run.sh** at the terminal window. To reconfigure the
  agent settings, use the **./configure.sh** script`
 
  You’ll need to restart the agent manually each time you restart the VM. In a production situation you could configure the agent to start
  automatically as a daemon. Service mode is supported only in Ubuntu 16. You’ll find notes on how to do this at the GitHub site for the
- agent listed earlier.
+ agent listed earlier.</pre>
 
 You can now run the build definition using the agent you have setup
 instead of the **hosted** agent.
