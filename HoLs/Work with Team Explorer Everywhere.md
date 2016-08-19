@@ -219,6 +219,8 @@ the results pane by using the **Column Options** dialog.
 
     <img src="./images/tee/image26.png" width="528" height="376" />
 
+### Commiting Changes
+
 1.  Switch to Eclipse and change to the Java EE perspective.
 
 2.  Right-click on the **jdev/src/main/webapp** project node and select
