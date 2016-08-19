@@ -51,7 +51,7 @@ We can now go ahead a create a new Release Definition. Start a new empty release
 
     ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image004.jpg?raw=true)
 
-Now, add the **Azure Resource Group Deployment** task to the default environment.
+    Now, add the **Azure Resource Group Deployment** task to the default environment.
   
 6. Set the task attributes as follows:
 
@@ -66,9 +66,9 @@ Now, add the **Azure Resource Group Deployment** task to the default environment
     | Template Parameters | Use the file picker to choose the **azuredeploy.parameters.json** file from the build artifacts_$(System.DefaultWorkingDirectory)\Deploy scripts/scripts/azuredeploy.parameters.json_ |
     | Override Template Parameters | -vmInstanceName $(vmname) -adminUserName $(adminuser) -adminPassword (ConvertTo-SecureString -String &#39;$(adminpwd)&#39; -AsPlainText -Force) -tomcatadminuser $(tomcatadminuser) -tomcatadminpwd $(ConvertTo-SecureString -String &#39;$(adminpwd)&#39; -AsPlainText -Force) |
 
-Here is a screenshot of the task:
+    Here is a screenshot of the task:
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image005.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image005.jpg?raw=true)
 
 7. Next, add **Azure PowerShell** task. The task will get execute a PowerShell script to retrieve the IP address of the VM created in the resource group and update the **ipadddr** variable defined in the RM defintion. Set the attribute of the tasks as follows:
 
