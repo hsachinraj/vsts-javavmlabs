@@ -1,5 +1,5 @@
 
-# Exercise 8: Releasing your applications  
+# Releasing your applications  
 
 A big pain for any development team is getting changes made on a
 developer’s workstation deployed to a dev, test, or even production
