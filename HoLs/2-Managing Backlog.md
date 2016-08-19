@@ -17,7 +17,7 @@ through the MyShuttle scenario.
 
 2.  Click the **Work** link.
 
-3.  On the left, click the **Features** link.
+3.  On the left, click the **Features** link.  
     <img src="./images/backlog/image2.png" width="468" height="213" />
 
     You’re now on the **Features** backlog.
@@ -163,7 +163,7 @@ through the MyShuttle scenario.
 
     <img src="./images/backlog/image22.png" width="152" height="200" />
 
-Now you can see your work for the just the current sprint.
+    Now you can see your work for the just the current sprint.
 
     <img src="./images/backlog/image23.png" width="279" height="173" />
 
@@ -212,5 +212,4 @@ features of the Work Hub including the Task board.
 
 <pre>This is a quick introduction to the Agile Planning tools and Work Items. You’ll work with them 
 some more later. If you want to read more about the Agile Planning tools, Sprint Planning, and the Scrum
-template follow this <a href="https://msdn.microsoft.com/en-us/Library/vs/alm/Work/scrum/sprint-planning">link</a>
-
+template follow this <a href="https://msdn.microsoft.com/en-us/Library/vs/alm/Work/scrum/sprint-planning">link</a></pre>
