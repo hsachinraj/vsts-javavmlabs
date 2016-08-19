@@ -15,8 +15,7 @@ Make sure you have completed the above pre-requisites before proceeding further.
 
 ## Creating a build definition
 
-Let&#39;s start with a build definition.
-
+Let's start with a build definition.
 
 1. Create a new build definition – let&#39;s call it **deployment script build** ). Start with an empty template and choose **your team project** as the Repository source. You can use the **Hosted** agent or select an another agent (If you are going to use the same agent for Release, note that agent will need to be on Windows with Azure PowerShell installed). Select **Create** to finish the wizard.  
 
