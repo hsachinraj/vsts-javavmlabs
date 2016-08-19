@@ -66,6 +66,8 @@ development. Earlier you created a couple to track your progress in this
 walkthrough. Now you’re going to add a few more. Only this time, you’re
 going to add work items for MyShuttle.biz.
 
+### Working with Queries
+
 1.  Click the **New Query** link.
 
     <img src="./images/tee/image7.png" width="577" height="193" />
@@ -87,7 +89,7 @@ going to add work items for MyShuttle.biz.
     Project. Remember for this project you used the Scrum template.
 
 1.  Collapse the combo-box leaving **\[Any\]** as the value. Click the
-    > **Run Query** button the toolbar to execute.
+    **Run Query** button the toolbar to execute.
 
     <img src="./images/tee/image9.png" width="515" height="217" />
 
@@ -103,9 +105,9 @@ the results pane by using the **Column Options** dialog.
 
     <img src="./images/tee/image11.png" width="557" height="77" />
 
-The Column Options dialog opens up. There are two tabs. The first
-controls what fields a query returns, the ordering of the columns (left
-to right), and the default width of the column.
+    The Column Options dialog opens up. There are two tabs. The first
+    controls what fields a query returns, the ordering of the columns (left
+    to right), and the default width of the column.
 
     <img src="./images/tee/image12.png" width="492" height="325" />
 
