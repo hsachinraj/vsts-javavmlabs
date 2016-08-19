@@ -71,7 +71,7 @@ You can create new or customize existing perspectives. If you want to know more,
 4.  Eclipse will open a Secure Storage dialog. Enter a password and
     confirm it in the dialog and click **OK**.
 
-<pre>Eclipse stores the connection information in an encrypted form in a storage file that is stored with 
+    <pre>Eclipse stores the connection information in an encrypted form in a storage file that is stored with 
 a predefined password. Make sure you can remember this password. Eclipse will offer to allow you to save
 password hints for password recovery. Click Yes or No depending upon your needs.</pre>
 
