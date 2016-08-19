@@ -18,6 +18,7 @@ through the MyShuttle scenario.
 2.  Click the **Work** link.
 
 3.  On the left, click the **Features** link.  
+
     <img src="./images/backlog/image2.png" width="468" height="213" />
 
     You’re now on the **Features** backlog.
