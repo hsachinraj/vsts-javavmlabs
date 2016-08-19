@@ -142,9 +142,9 @@ the VM.
 <pre><b>Note:</b> You will need to configure the agent only once. To run the agent, use <b>./run.sh</b> at the terminal window. 
 To reconfigure the agent settings, use the <b>./configure.sh</b> script</pre>
 
- `You’ll need to restart the agent manually each time you restart the VM. In a production situation 
- you could configure the agent to start automatically as a daemon. Service mode is supported only in Ubuntu 16. 
- You’ll find notes on how to do this at the GitHub site for the
- agent listed earlier.`
+<pre>You’ll need to restart the agent manually each time you restart the VM. In a production situation 
+you could configure the agent to start automatically as a daemon. Service mode is supported only in Ubuntu 16. 
+You’ll find notes on how to do this at the GitHub site for the
+agent listed earlier.</pre>
 
 You can now run the build definition using the agent you have setup instead of the **hosted** agent.
