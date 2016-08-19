@@ -168,8 +168,7 @@ through the MyShuttle scenario.
 
     <img src="./images/backlog/image23.png" width="279" height="173" />
 
-You need to assign the **Add master navigation to menu page** Task to
-you.
+    You need to assign the **Add master navigation to menu page** Task to you.
 
 1.  Move your mouse and hover over the card and you’ll get a combo-box
     that opens up.
@@ -185,7 +184,7 @@ you.
 
     <img src="./images/backlog/image25.png" width="178" height="119" />
 
-Now you want to show that you’ve started working.
+    Now you want to show that you’ve started working.
 
 1.  Drag and drop the **Add Master Branding** work item to the **In
     progress** column.
@@ -197,8 +196,8 @@ Now you want to show that you’ve started working.
 
     <img src="./images/backlog/image27.png" width="226" height="27" />
 
-This opens the Settings dialog where you can make adjustments to many
-features of the Work Hub including the Task board.
+    This opens the Settings dialog where you can make adjustments to many
+    features of the Work Hub including the Task board.
 
 1.  For **Task** check the **Show ID** checkbox to show the work item ID
     on the cards.
