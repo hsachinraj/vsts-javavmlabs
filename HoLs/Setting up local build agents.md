@@ -53,28 +53,27 @@ VSTS opens a new browser tab at your Team Project profile.
 Creating Personal access tokens(PAT)
 -----------------------------------------
 
-    In order to configure build agent for VSTS account we need to create
-    a Personal access token.
+ In order to configure build agent for VSTS account we need to create a Personal access token.
 
-    1.  In the upper right corner, click you name (1) which opens a drop
-        down menu, and then click the Security (2) menu option.  
-        <img src="./images/agent/image9.jpg" width="198" height="267" />
+1.  In the upper right corner, click you name (1) which opens a drop
+    down menu, and then click the Security (2) menu option.  
 
-    2.  On the new page, click the **Add** button under Personal access
-        tokens tab.
+    <img src="./images/agent/image9.jpg" width="198" height="267" />
 
-    3.  In the Create a personal access tokes page, provide the token
-        description, select VSTS account and then click on **Create
-        token** button at the bottom.
+2.  On the new page, click the **Add** button under Personal access
+    tokens tab.
 
-        <img src="./images/agent/image10.jpg" width="485" height="374" />
+3.  In the Create a personal access tokes page, provide the token description, select VSTS account and then click on **Create
+    token** button at the bottom.
 
-    4.  When you are done make a copy of token, you will use this token
-        as your password.
+    <img src="./images/agent/image10.jpg" width="485" height="374" />
 
-        <img src="./images/agent/image11.png" width="478" height="117" />
+4.  When you are done make a copy of token, you will use this token
+    as your password.
 
-    5.  You can close the “admin” tab in your browser.
+    <img src="./images/agent/image11.png" width="478" height="117" />
+
+5.  You can close the “admin” tab in your browser.
 
 Configuring the local agent on the VM instance
 ----------------------------------------------
