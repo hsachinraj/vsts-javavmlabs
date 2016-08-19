@@ -38,7 +38,7 @@ team project name may differ.
 
 <pre><b>Note:</b> A perspective defines the initial set and layout of views in the Workbench window. 
 You can create new or customize existing perspectives. If you want to know more, you might find this
-<a href="http://www.tutorialspoint.com/eclipse/eclipse_perspectives.htm"/> helpful </pre>
+<a href="http://www.tutorialspoint.com/eclipse/eclipse_perspectives.htm"> helpful</a> </pre>
 
 1.  If necessary, click the Home icon. Click the **Connect to Team
     Foundation Server** link.
