@@ -1,4 +1,4 @@
-## Exercise 6: Setting up a local Build agent
+## Setting up a local Build agent
 
 In this exercise, you will configure a VSTS Cross Platform Build &
 Release Agent on the local machine. You will download and configure the
@@ -14,13 +14,13 @@ Setting up Agent Pool permissions on VSTS
 
 1.  In your VSTS Account, click the Admin cog in the upper right corner.
 
-> <img src="./images/agent/image2.png" width="113" height="22" />
+ <img src="./images/agent/image2.png" width="113" height="22" />
 
 VSTS opens a new browser tab at your Team Project profile.
 
 1.  Click on your VSTS account link and select the **Agent pools** tab.
 
-> <img src="./images/agent/image3.jpg" width="536" height="66" />
+    <img src="./images/agent/image3.jpg" width="536" height="66" />
 
 1.  In the **All pools** list, make sure you’ve selected
     **Default (Default)**.
@@ -29,7 +29,7 @@ VSTS opens a new browser tab at your Team Project profile.
 
 2.  Then click **Roles** under **Roles for pool Default**.
 
- <img src="./images/agent/image5.jpg" width="439" height="140" />
+    <img src="./images/agent/image5.jpg" width="439" height="140" />
 
 1.  Click the **Add** button. Type your name in and select the Role
     Administrator then click **Add** button.
@@ -50,7 +50,8 @@ VSTS opens a new browser tab at your Team Project profile.
 
     <img src="./images/agent/image8.jpg" width="378" height="184" />
 
-2.  Creating Personal access tokens(PAT)
+Creating Personal access tokens(PAT)
+-----------------------------------------
 
     In order to configure build agent for VSTS account we need to create
     a Personal access token.
@@ -73,7 +74,7 @@ VSTS opens a new browser tab at your Team Project profile.
 
         <img src="./images/agent/image11.png" width="478" height="117" />
 
-3.  You can close the “admin” tab in your browser.
+    5.  You can close the “admin” tab in your browser.
 
 Configuring the local agent on the VM instance
 ----------------------------------------------
