@@ -33,13 +33,13 @@ Let&#39;s start with a build definition.
 3. Run the build.
 
 ## Setting up the Release pipeline
-We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
+    We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
 
-    4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
+4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
 
     ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image003.jpg?raw=true)
 
-    5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
+5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
 
     | **Variable Name** | **Value** | **Purpose** |
     | --- | --- | --- |
