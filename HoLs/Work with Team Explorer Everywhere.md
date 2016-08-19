@@ -191,11 +191,9 @@ the results pane by using the **Column Options** dialog.
 
     Let’s have a look at what’s already installed in the VM.
 
-2.  If necessary, start Firefox. If it’s already running, switch to it
-    and open a new tab.
+2.  If necessary, start Firefox. If it’s already running, switch to it and open a new tab.
 
-3.  The application is a Java application using JSP pages hosted in
-    Tomcat that reads data from a MySQL database
+3.  The application is a Java application using JSP pages hosted in Tomcat that reads data from a MySQL database
 
 4.  On a fresh tab, navigate to <http://localhost:8080/myshuttledev/>.
 
@@ -216,14 +214,10 @@ the results pane by using the **Column Options** dialog.
 
     <img src="./images/tee/image25.png" width="624" height="262" />
 
-    <pre>As you can see, there’s some work to do to get the pages looking more professional. 
-    When you’re done, the pages will look like the following.</pre>
+    <pre>As you can see, there’s some work to do to get the pages looking more professional. When you’re done, 
+    the login page will look like the following.</pre>
 
     <img src="./images/tee/image26.png" width="528" height="376" />
-
-    <img src="./images/tee/image27.png" width="528" height="376" />
-
-	img src="./images/tee/image28.png" width="623" height="379" />
 
 1.  Switch to Eclipse and change to the Java EE perspective.
 
