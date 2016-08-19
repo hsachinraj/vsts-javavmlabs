@@ -28,8 +28,8 @@ Adding Tomcat Extension
 
 2.  Under the **Build and release category**, select **See more  
       
-    **<img src="./images/rm/image2.png" width="624" height="390" />**  
-    **
+    <img src="./images/rm/image2.png" width="624" height="390" />**  
+    
 
 3.  Look for the extension titled **Apache Tomcat Deployment** and
     select it  
@@ -51,10 +51,10 @@ Creating a new release definition
 ---------------------------------
 
 1.  In VSTS, access the **Build** Hub of your Team Project. Select the
-    > **Manual Build** and queue a new build.
+    **Manual Build** and queue a new build.
 
-> If you want to skip the tests, you can specify -Dmaven.test.skip=true
-> in the **Options** parameter
+    > If you want to skip the tests, you can specify -Dmaven.test.skip=true
+    > in the **Options** parameter
 
 1.  When the build is complete, ensure that the build has generated and
     > published the WAR file. You can verify this by select the build
