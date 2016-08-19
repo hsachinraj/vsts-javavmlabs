@@ -38,10 +38,10 @@ team project name may differ.
 
 <pre><b>Note:</b> A perspective defines the initial set and layout of views in the Workbench window. 
 You can create new or customize existing perspectives. If you want to know more, you might find this
-[tutorial](http://www.tutorialspoint.com/eclipse/eclipse_perspectives.htm) helpful </pre>
+<a href="http://www.tutorialspoint.com/eclipse/eclipse_perspectives.htm"/> helpful </pre>
 
 1.  If necessary, click the Home icon. Click the **Connect to Team
-    > Foundation Server** link.
+    Foundation Server** link.
 
     <img src="./images/git/image5.png" width="182" height="239" />
 
@@ -71,13 +71,11 @@ You can create new or customize existing perspectives. If you want to know more,
 4.  Eclipse will open a Secure Storage dialog. Enter a password and
     confirm it in the dialog and click **OK**.
 
-<pre>Eclipse stores the connection information in an encrypted form in a
-storage file that is stored with a predefined password. Make sure you
-can remember this password. Eclipse will offer to allow you to save
-password hints for password recovery. Click Yes or No depending upon
-your needs.</pre>
+<pre>Eclipse stores the connection information in an encrypted form in a storage file that is stored with 
+a predefined password. Make sure you can remember this password. Eclipse will offer to allow you to save
+password hints for password recovery. Click Yes or No depending upon your needs.</pre>
 
-<img src="./images/git/image10.png" width="364" height="276" />
+    <img src="./images/git/image10.png" width="364" height="276" />
 
 1.  Now click **Close** in the **Add/Remove Team Foundation Server** dialog.
 
@@ -104,7 +102,7 @@ Cloning Git Repository
 
     <img src="./images/git/image13.png" width="225" height="138" />
 
-In the dialog that opens click **Next**.
+    In the dialog that opens click **Next**.
 
     <img src="./images/git/image14.png" width="304" height="273" />
 
@@ -206,8 +204,8 @@ for Git in Eclipse.
     **Configuration** under the **Git** node.
 
 2.  On the **Configuration** page, click **Add Entry**. In the resulting
-    > dialog, enter **user.name** in the **Key** field and in the
-    > **Value** field, enter your *display name* and click **OK**.
+    dialog, enter **user.name** in the **Key** field and in the
+    **Value** field, enter your *display name* and click **OK**.
 
 3.  Click **Add Entry** again to make another entry. Enter
     **user.email** in the **Key** field and in the **Value** field,
@@ -251,7 +249,7 @@ Committing changes to Git
 2.  Click the **Code** link at the top. You can see the code you just
     pushed into the repository.
 
-> <img src="./images/git/image34.png" width="311" height="269" />
+    <img src="./images/git/image34.png" width="311" height="269" />
 
 1.  Click the **History** tab to see the information on the push you
     just performed.
