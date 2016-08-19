@@ -100,7 +100,9 @@ We can now go ahead a create a new Release Definition. Start a new empty release
     5. Sample data injected to the database
     . 
 10. From the log file of the **Apache Tomcat Task** , you can find the URL of the Tomcat server on the VM.
+
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image008.png?raw=true)
 
 11. Navigate to the URL and you should see your app deployed!!!
+
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image009.jpg?raw=true)
