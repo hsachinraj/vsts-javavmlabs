@@ -32,7 +32,7 @@ Let's start with a build definition.
 3. Run the build.
 
 ## Setting up the Release pipeline
-    We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
+We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
 
 4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
 
@@ -52,7 +52,7 @@ Let's start with a build definition.
     ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image004.jpg?raw=true)
 
 Now, add the **Azure Resource Group Deployment** task to the default environment.
-
+  
 6. Set the task attributes as follows:
 
     | **Attribute** | **Value** |
