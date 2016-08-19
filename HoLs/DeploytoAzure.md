@@ -18,7 +18,8 @@ Make sure you have completed the above pre-requisites before proceeding further.
 Let&#39;s start with a build definition.
 
 
-1. Create a new build definition – let&#39;s call it **deployment script build** ). Start with an empty template and choose **your team project** as the Repository source. You can use the **Hosted** agent or select an another agent (If you are going to use the same agent for Release, note that agent will need to be on Windows with Azure PowerShell installed). Select **Create** to finish the wizard.
+1. Create a new build definition – let&#39;s call it **deployment script build** ). Start with an empty template and choose **your team project** as the Repository source. You can use the **Hosted** agent or select an another agent (If you are going to use the same agent for Release, note that agent will need to be on Windows with Azure PowerShell installed). Select **Create** to finish the wizard.  
+
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image002.jpg?raw=true)
 
 2. Add **Copy and publish build artifacts** task to the definition. Set theattributes of the task as following:
@@ -34,7 +35,8 @@ Let&#39;s start with a build definition.
 ## Setting up the Release pipeline
 We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
 
-4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab
+4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
+
 ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image003.jpg?raw=true)
 
 5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
