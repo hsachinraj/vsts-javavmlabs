@@ -35,11 +35,11 @@ Let&#39;s start with a build definition.
 ## Setting up the Release pipeline
 We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
 
-4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
+    4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab  
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image003.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image003.jpg?raw=true)
 
-5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
+    5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
 
     | **Variable Name** | **Value** | **Purpose** |
     | --- | --- | --- |
@@ -50,7 +50,7 @@ We can now go ahead a create a new Release Definition. Start a new empty release
     | tomcatadminuser | &lt;&lt;any name&gt;&gt; e.g, tomcatAdmin | User that will be added to tomcat users list with manager and admin permissions |
     | ipaddr | leave this empty | variable that will be updated at runtime to store the ip address of the VM |
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image004.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image004.jpg?raw=true)
 
 Now, add the **Azure Resource Group Deployment** task to the default environment.
 
