@@ -116,13 +116,13 @@ Creating a new release definition
     <img src="./images/rm/image12.png" width="404" height="179" />
 
 2.  Now, let’s go back to the **Environments** tab. Select the Default
-    > Environment and click the ellipsis button and select **Agent
-    > Options**.
+    Environment and click the ellipsis button and select **Agent
+    Options**.
 
     <img src="./images/rm/image13.png" width="302" height="263" />
 
 3.  Select the **Default** pool (that has the local build agent running
-    > on the VM) as the default queue
+    on the VM) as the default queue
 
     <img src="./images/rm/image14.png" width="379" height="212" />
 
