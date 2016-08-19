@@ -219,7 +219,8 @@ the results pane by using the **Column Options** dialog.
 
     <img src="./images/tee/image26.png" width="528" height="376" />
 
-### Commiting Changes
+Commiting Changes
+-----------------------------------------
 
 1.  Switch to Eclipse and change to the Java EE perspective.
 
@@ -277,7 +278,7 @@ the results pane by using the **Column Options** dialog.
 
     <img src="./images/tee/image32.png" width="331" height="293" />
 
-You now have two versions of the file open.
+    You now have two versions of the file open.
 
 1.  Select all of the code (**<span
     style="font-variant:small-caps;">Ctrl+A</span>**) in **index.jsp**
@@ -314,8 +315,8 @@ You now have two versions of the file open.
 
 10. Once the push is done, click **OK** to close the dialog.
 
-    At this point you could go manually run a build. Or you could change
-    the build so that it runs whenever a push is done.
+    <pre>At this point you could go manually run a build. Or you could change
+    the build so that it runs whenever a push is done</pre>
 
 11. Switch to your web browser and access a tab that is connected to
     your Team Project.
