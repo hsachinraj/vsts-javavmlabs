@@ -1,27 +1,24 @@
 ## Running Maven builds, Unit Tests and Code Coverage with VSTS
 
-
-Building your Java project with Maven
--------------------------------------
-
 In this exercise, you will learn how to create a Team Build that runs in
 Visual Studio Team Services. This makes it quick and easy to start
 building your code, either manually or in an automated fashion, without
 having to worry about any build server configuration.
 
-### Creating a new build definition
+Building your Java project with Maven
+-------------------------------------
 
 1.  To the right of the master branch, click the **setup now** button.
 
     <img src="./images/build/image2.png" width="562" height="252" />
 
 2.  In the **Create a new build definition** dialog, select the
-    > **Empty** definition at the bottom and click **Next.**
+    **Empty** definition at the bottom and click **Next.**
 
     <img src="./images/build/image3.png" width="325" height="326" />
 
 1.  On the next page, you’ll see you can configure repo and
-    > branch settings. Accept the defaults and click **Create**.
+    branch settings. Accept the defaults and click **Create**.
 
     <img src="./images/build/image4.png" width="382" height="285" />
 
@@ -34,7 +31,7 @@ having to worry about any build server configuration.
     <img src="./images/build/image5.png" width="250" height="116" />
 
 1.  In the Add Tasks dialog, scroll the list of **Build** tasks and
-    > select the **Maven** build task and click **Add**.
+    select the **Maven** build task and click **Add**.
 
     <img src="./images/build/image6.png" width="325" height="299" />
 
@@ -88,7 +85,7 @@ having to worry about any build server configuration.
 
     <img src="./images/build/image14.png" width="247" height="87" />
 
-<img src="./images/build/image15.png" width="361" height="359" />
+    <img src="./images/build/image15.png" width="361" height="359" />
 
 1.  Click **OK** to queue the build.
 
@@ -100,7 +97,7 @@ having to worry about any build server configuration.
     <img src="./images/build/image17.png" width="455" height="264" />
 
 1.  Monitor the build until it completes. It will take a couple
-    > of minutes. You can monitor the progress in the Console window.
+    of minutes. You can monitor the progress in the Console window.
 
     <img src="./images/build/image18.png" width="356" height="86" />
 
@@ -113,7 +110,8 @@ having to worry about any build server configuration.
 
     <img src="./images/build/image19.png" width="440" height="327" />
 
-### Running Unit Tests
+Running Unit Tests
+----------------------------------------------
 
 1.  Notice the **Test Results**. The unit tests were executed as a part
     of the Build and the test results are published back to VSTS since
@@ -142,7 +140,7 @@ having to worry about any build server configuration.
     **<img src="./images/build/image21.png" width="575" height="228" />**  
     **
 
-<pre> **Note**: For failed tests, the details pane will show the error message and the stack trace to 
+<pre> <b>Note</b>: For failed tests, the details pane will show the error message and the stack trace to 
 help you investigate the cause of the failure. The graph above the details pane will show the outcome 
 trend of the tests that can help you quickly identify if the tests fail intermittently.
 
@@ -168,10 +166,11 @@ Currently, VSTS supports **Jacoco** and **Cobetura** for Java projects.
     free Java tool that calculates the percentage of code accessed
     by tests. It measures branch and line coverage .
 
-<pre>Note that if you are using <b>hosted</b> agent for your build, Jacoco and Cobetura add-ins will be pulled automatically by the agent. 
-You will just need to select the tool you want to use for code coverage!
+<pre>Note that if you are using <b>hosted</b> agent for your build, Jacoco and Cobetura add-ins will be pulled 
+automatically by the agent. You will just need to select the tool you want to use for code coverage!
 
-If you use other local private agents, you will need to manage this yourself by adding the plug-ins to your maven file.</pre>
+If you use other local private agents, you will need to manage this yourself by adding the plug-ins 
+to your maven file.</pre>
 
 1.  Let’s add code coverage to our Build definition now. Modify your
     build definition and select **Jacoco** as the code coverage tool.
