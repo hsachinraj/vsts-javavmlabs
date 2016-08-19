@@ -1,5 +1,4 @@
 # Work with Team Explorer Everywhere
-==============================================
 
 Now that you’ve gotten your environment configured, you can now do some
 work. The sample code provided is for a fictions company MyShuttle.biz.
