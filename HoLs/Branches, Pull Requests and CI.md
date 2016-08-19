@@ -167,16 +167,11 @@ an approval if they're satisfied with the changes.
     as:
 
 -   ***Active***: Comment is still under review or active discussion.
-
--   ***Resolved***: The issue brought up in this comment has
-    > been addressed.
-
--   ***Won't Fix***: The suggestion in the comment is noted and is
-    > actionable, but no changes will be made in this pull request.
-
+-   ***Resolved***: The issue brought up in this comment has been addressed.
+-   ***Won't Fix***: The suggestion in the comment is noted and is actionable, but no changes will be made in this pull request.
 -   ***Closed***: The remark is no longer a pending action item for the
-    > pull request. Usually closed comments are for items that turned
-    > out to not have any actions after the finishing the discussion
+    pull request. Usually closed comments are for items that turned
+    out to not have any actions after the finishing the discussion
 
 1.  When the pull request owner and the reviewers are satisfied that the
     pull request is ready to merge, you can do it from the web browser
