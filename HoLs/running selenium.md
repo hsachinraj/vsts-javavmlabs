@@ -111,7 +111,8 @@ You are most likely to run automated tests in a deployment pipeline – to run r
     ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image017.jpg?raw=true)
 
 1. When the release is complete, you will notice that the tests were executed during the deployment and the test results are published in the **Tests** tab
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image018.jpg?raw=true)
+
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image018.jpg?raw=true)
 
  
 
