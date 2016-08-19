@@ -1,5 +1,4 @@
 ## Creating your Visual Studio Team Services account and Team project
-==============================================================================
 
 This exercise will walk you through the steps to creating your Visual
 Studio Team Services account and create a new project. **If you already
@@ -57,7 +56,7 @@ Creating your Visual Studio Team Services account
 
     Please continue reading before making choices.
 
-    <pre> When you are creating an account, there are two pieces of data that you will need to provide. 
+    <pre>When you are creating an account, there are two pieces of data that you will need to provide. 
     However, from time to time, we experiment with different ways to onboard new customers. It is possible 
     what you see will vary. In general, the following data is required.</pre>
 
