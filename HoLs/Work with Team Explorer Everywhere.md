@@ -38,11 +38,9 @@ source control, work item tracking, or build automation.
 2.  Eclipse will open a Secure Storage dialog. Enter a password and
     confirm it in the dialog and click **OK**.
 
-<pre>Eclipse stores the connection information in an encrypted form in a
-storage file that is stored with a predefined password. Make sure you
-can remember this password. Eclipse will offer to allow you to save
-password hints for password recovery. Click Yes or No depending upon
-your needs.</pre>
+    <pre>Eclipse stores the connection information in an encrypted form in a storage file that is stored with a predefined password. Make sure you
+    can remember this password. Eclipse will offer to allow you to save password hints for password recovery. Click Yes or No depending upon
+    your needs.</pre>
 
     <img src="./images/tee/image5.png" width="364" height="276" />
 
