@@ -7,34 +7,34 @@ One of the great things about using automated builds and deployment tools is tha
 
 1. On your VSTS Task Board, drag and drop **Test New Site** to **In Progress** (created in Exercise 5- Working with TEE)
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image002.png?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image002.png?raw=true)
 
 2. In Eclipse, select the **Project Explorer**. If you are still referring to the topic ( **Addmasterbranding** ) branch created in Exercise 7, do a **Pull** to pull the changes from the remote branch
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image003.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image003.jpg?raw=true)
 
 3. Then switch to the master branch again by using the Switch to command
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image004.png?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image004.png?raw=true)
 
 3. Expand the project folder tree under **jdev** until you can see the contents of the example folder holding the project&#39;s tests (jdev\src\test\java\com\microsoft\example)
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image005.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image005.jpg?raw=true)
 
 
 Currently there are tests that run during Team Build via JUnit. You&#39;re going to add tests that use the Selenium web test framework to test the User Interface.
 
 5. Right-click on the **example** folder and select **Import**
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image006.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image006.jpg?raw=true)
 
 6. Select **File System**
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image007.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image007.jpg?raw=true)
 
 7. Select the **myshutle.UITest** folder and select the UITest.java file
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image008.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image008.jpg?raw=true)
 
 8. Click **Finish**  to import the file.
 9. Open the **pom.xml** file and change to the **Source** tab.
@@ -46,20 +46,21 @@ Currently there are tests that run during Team Build via JUnit. You&#39;re going
         <version>2.48.2</version>
         </dependency>
         
-        ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image009.jpg?raw=true)
+        
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image009.jpg?raw=true)
 
 11. Save your changes. Commit and Push your changes to VSTS.
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image010.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image010.jpg?raw=true)
 
 12. Access your browser and switch to the **Build** hub. Clone your existing **Manual Build** definition like before.
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image011.png?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image011.png?raw=true)
 
 
 13. For the existing **Maven** build task, add the following text to the **Options**  **-Dtest=UITest**
 
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image012.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image012.jpg?raw=true)
 
 
 14. Click the **Save** button. Change the name to **Manual Build with UI Tests**. Add a comment Change to run Selenium tests and **Save**.
@@ -67,7 +68,9 @@ Currently there are tests that run during Team Build via JUnit. You&#39;re going
 3. Click OK and wait for the build to run. Don&#39;t do anything while the build is running. If all goes well, you will see instances of the Firefox web browser &quot;pop open&quot; while the build runs.
 4. If you leave your main instance of Firefox running, you&#39;ll see the build bar turn green and you&#39;ll see the build is complete.
 
- ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image013.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image013.jpg?raw=true)
+
+     ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image014.jpg?raw=true)
 
 ## Running Selenium in a Release Pipeline
 
@@ -83,7 +86,7 @@ You are most likely to run automated tests in a deployment pipeline – to run r
     | Artifact Name | site |
     | Artifact Type | Server |
 
-    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image014.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image015.jpg?raw=true)
 
 
 1. **Save** the build definition and queue the build
@@ -99,16 +102,16 @@ You are most likely to run automated tests in a deployment pipeline – to run r
     | Goals | test |
     | Test Results File | $(System.DefaultWorkingDirectory)/Manual Build/site/target/surefire-reports/TEST-\*.xml |
 
-    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image015.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image016.jpg?raw=true)
 
 
 1. Save the Release definition and start a new release
 2. Now, the release pipeline deploys the latest version of the application and running regression test using Selenium
 
-    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image016.jpg?raw=true)
+    ![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image017.jpg?raw=true)
 
 1. When the release is complete, you will notice that the tests were executed during the deployment and the test results are published in the **Tests** tab
-![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image017.jpg?raw=true)
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/selenium/image018.jpg?raw=true)
 
  
 
