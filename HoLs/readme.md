@@ -1,4 +1,7 @@
-## Overview and Acquiring the VM
+#Java Development on Linux with Visual Studio Team Services  
+
+Overview and Acquiring the VM
+-----------------------------------------
 
 Visual Studio Team Services makes your software lifecycle better and faster letting you code in Eclipse, IntelliJ, or your favorite Java IDE. You get free unlimited private Git repositories, agile planning and work item tracking tools, and support for builds and continuous integration using Ant, Maven, or Gradle.
 
@@ -39,13 +42,14 @@ A set of hands-on-lab documents, which also function as demo scripts, are availa
 
 Once you get your team environment set up, you&#39;ll start working on an Intranet site for a fictitious company, MyShuttle.biz, where you&#39;ll update the site, deploy it and test it all with the VM you&#39;re using and Visual Studio Team Services.
 
-### Prerequisites
+Prerequisites
+-----------------------------------------
 
-1.
-  1. **VSTS for Java on Linux VM 2016:** In order to complete this lab, you will need the VSTS for Java on Linux VM 2016 virtual machine provided by Microsoft. The virtual machine can be either downloaded and run locally on Hyper-V or can be instantiated and run on Azure. For more information on acquiring and using this virtual machine, please see the next section.
-  2. **Target Audience:** The image and the accompanying hand-on-labs is for technical audience. As such, familiarity with Visual Studio Team Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
+1. **VSTS for Java on Linux VM 2016:** In order to complete this lab, you will need the VSTS for Java on Linux VM 2016 virtual machine provided by Microsoft. The virtual machine can be either downloaded and run locally on Hyper-V or can be instantiated and run on Azure. For more information on acquiring and using this virtual machine, please see the next section.
+2. **Target Audience:** The image and the accompanying hand-on-labs is for technical audience. As such, familiarity with Visual Studio Team Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
 
-### Acquiring the VSTS for Java Linux VM 2016
+Acquiring the VSTS for Java Linux VM 2016
+-----------------------------------------
 
 In order to run on Azure, you will need to add the VHD to your Azure storage and use it as an image and create VM based on the image:
 
