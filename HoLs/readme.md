@@ -27,7 +27,7 @@ The virtual machine contains the following pre-configured software:
 
 A set of hands-on-lab documents, which also function as demo scripts, are available for download along with this virtual machine. There are 11 exercises in this walkthrough:
 
-1. Creating Your Visual Studio Team Services Account and Team Project
+1. <a href="./1.Setting up a new project on VSTS.md">Creating Your Visual Studio Team Services Account and Team Project</a>
 2. Managing Your Backlog
 3. Working with Git
 4. Building your application, running unit tests and code coverage
