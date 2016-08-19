@@ -53,14 +53,13 @@ Creating a new release definition
 1.  In VSTS, access the **Build** Hub of your Team Project. Select the
     **Manual Build** and queue a new build.
 
-    > If you want to skip the tests, you can specify -Dmaven.test.skip=true
-    > in the **Options** parameter
+    `If you want to skip the tests, you can specify -Dmaven.test.skip=true in the **Options** parameter`
 
 1.  When the build is complete, ensure that the build has generated and
-    > published the WAR file. You can verify this by select the build
-    > and then selecting the **Artifacts** tab. Click the **Explore**
-    > link next to the folder **Site**. Expand the folder and you should
-    > see **MyShuttleDev.war**
+    published the WAR file. You can verify this by select the build
+    and then selecting the **Artifacts** tab. Click the **Explore**
+    link next to the folder **Site**. Expand the folder and you should
+    see **MyShuttleDev.war**
 
     <img src="./images/rm/image6.png" width="521" height="265" />
 
@@ -68,7 +67,7 @@ Creating a new release definition
     running on the VM. To begin this, select the **Release** hub.
 
 2.  Click the **here** link or the **Green +** icon to start creating a
-    > Release Definition.
+    Release Definition.
 
     <img src="./images/rm/image7.png" width="624" height="164" />
 
@@ -79,16 +78,16 @@ Creating a new release definition
 4.  Set the Name to **MyShuttle Release.**
 
 5.  Click **Add Tasks** and choose **Deploy to** **Apache Tomcat** task
-    > from the group and click **Add**.
+    from the group and click **Add**.
 
-> <img src="./images/rm/image9.png" width="394" height="364" />
+ <img src="./images/rm/image9.png" width="394" height="364" />
 
 1.  Click **Close**.
 
 2.  Before we edit the **Tomcat** task, you will need to link the
-    > release definition to the build definition. Select **Artifacts**
-    > tab and select the **Link an artifact source**. You should see the
-    > ***Manual Build*** as the Source (Build Definition).
+    release definition to the build definition. Select **Artifacts**
+    tab and select the **Link an artifact source**. You should see the
+    ***Manual Build*** as the Source (Build Definition).
 
     <img src="./images/rm/image10.png" width="624" height="386" />
 
@@ -109,10 +108,10 @@ Creating a new release definition
 <img src="./images/rm/image11.png" width="602" height="194" />
 
 1.  Let’s define the variable we used in the task. Select
-    > **Configuration** and enter **VM\_PWD** as the name for the
-    > variable and **P2ssword** as the value. Select the little lock
-    > icon next to the value field to hide the variable so that it is
-    > not displayed as plain text.
+    **Configuration** and enter **VM\_PWD** as the name for the
+    variable and **P2ssword** as the value. Select the little lock
+    icon next to the value field to hide the variable so that it is
+    not displayed as plain text.
 
     <img src="./images/rm/image12.png" width="404" height="179" />
 
@@ -127,9 +126,7 @@ Creating a new release definition
 
     <img src="./images/rm/image14.png" width="379" height="212" />
 
-> You may also assign approvers for post and pre deployment to the
-> environments but since we are deploying to a development environment,
-> we will assume that no approval is required and leave it as automated.
+    `You may also assign approvers for post and pre deployment to the environments but since we are deploying to a development environment,we will assume that no approval is required and leave it as automated.`
 
 Triggering a release
 --------------------
@@ -149,17 +146,17 @@ promoting it.
     <img src="./images/rm/image15.png" width="246" height="251" />
 
 2.  Select **After release creation** for **Triggers** and click **OK**
-    > to close the dialog
+    to close the dialog
 
     <img src="./images/rm/image16.png" width="484" height="276" />
 
 3.  Select the **Save** button to save the new release definition.
-    > Select **Release** and **Create Release**
+    Select **Release** and **Create Release**
 
     <img src="./images/rm/image17.png" width="408" height="157" />
 
 4.  Select the latest build from the Artifacts Version dropdown and
-    > select **Create**
+    select **Create**
 
     <img src="./images/rm/image18.png" width="459" height="287" />
 
@@ -168,4 +165,4 @@ promoting it.
     with a new UI look running on tomcat. Open Firefox in the VM and
     navigate to the page **http://localhost:8080/myshuttledev**
 
-> <img src="./images/rm/image19.png" width="384" height="273" />
+    <img src="./images/rm/image19.png" width="384" height="273" />
