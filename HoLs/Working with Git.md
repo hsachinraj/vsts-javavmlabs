@@ -1,15 +1,15 @@
 ## Working with Git
 
-
-Adding existing code to Git
----------------------------
-
 In this exercise, you are going to learn how to put some existing code
 into your Team Project. This exercise assumes you have completed
 Exercise 1, and have created a Team Project that uses Git for version
 control and have completed Exercise 2 where you’ve defined some work
 items. This exercise uses a team project named **jdev**, though your
 team project name may differ.
+
+
+Adding existing code to Git
+---------------------------
 
 1.  Open Eclipse from the Launcher by clicking on the **Eclipse** icon.
 
