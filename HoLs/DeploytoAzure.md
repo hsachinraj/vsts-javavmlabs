@@ -19,6 +19,7 @@ Let&#39;s start with a build definition.
 
 
 1. Create a new build definition – let&#39;s call it **deployment script build** ). Start with an empty template and choose **your team project** as the Repository source. You can use the **Hosted** agent or select an another agent (If you are going to use the same agent for Release, note that agent will need to be on Windows with Azure PowerShell installed). Select **Create** to finish the wizard.
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image002.png?raw=true)
 
 2. Add **Copy and publish build artifacts** task to the definition. Set theattributes of the task as following:
 
@@ -34,6 +35,7 @@ Let&#39;s start with a build definition.
 We can now go ahead a create a new Release Definition. Start a new empty release definition – Let&#39;s name it **MyShuttle-Azure**.
 
 4. Link the release to the builds by selecting **Link an artifact source** from the **Artifacts** tab
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image003.png?raw=true)
 
 5. We will be using a few variables in our tasks – so, add them to the release definition on the **Configuration** page
 
@@ -45,7 +47,9 @@ We can now go ahead a create a new Release Definition. Start a new empty release
     | resourcegroup | &lt;&lt;any name&gt;&gt;, e.g., vstsjldevvm77 | Name for the VM |
     | tomcatadminuser | &lt;&lt;any name&gt;&gt; e.g, tomcatAdmin | User that will be added to tomcat users list with manager and admin permissions |
     | ipaddr | leave this empty | variable that will be updated at runtime to store the ip address of the VM |
-    
+
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image004.png?raw=true)
+
 Now, add the **Azure Resource Group Deployment** task to the default environment.
 
 6. Set the task attributes as follows:
@@ -63,6 +67,8 @@ Now, add the **Azure Resource Group Deployment** task to the default environment
 
 Here is a screenshot of the task:
 
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image005.png?raw=true)
+
 7. Next, add **Azure PowerShell** task. The task will get execute a PowerShell script to retrieve the IP address of the VM created in the resource group and update the **ipadddr** variable defined in the RM defintion. Set the attribute of the tasks as follows:
 
     |   **Attribute** | **Value** |
@@ -71,6 +77,7 @@ Here is a screenshot of the task:
     | Azure RM Subscription | Name of the Azure endpoint you created as described in the pre-requisite section above |
     | Script Path | Use the file picker to choose the **getip.ps1** file from the build artifacts_. $(System.DefaultWorkingDirectory)\Deploy 2/scripts/getip.ps1     |
     | Script Arguments | _$(resourcegroup) $(vmname)_ |
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image006.png?raw=true)
 
 8. Lastly, add the Tomcat tasks and set the task attributes as specified below:
 
@@ -82,6 +89,7 @@ Here is a screenshot of the task:
     | WAR file | Use the file picker to choose the **myshuttledev.war** file from the build artifacts_. - $(System.DefaultWorkingDirectory)\Manual Build/site/myshuttledev.war_ |
     | Application Context | _/_ |
     | Tomcat Server Version | _7 or Above_ |
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image007.png?raw=true)
 
 9. Now, we are ready to run the release. Select **+ Release**  and specify the latest build to start the deployment. Take a coffee break!!- as the provisioning of the resources will take some time. But when it is complete – you will see a VM created and installed with:
      1. Open JDK 7
@@ -91,5 +99,7 @@ Here is a screenshot of the task:
     5. Sample data injected to the database
     . 
 10. From the log file of the **Apache Tomcat Task** , you can find the URL of the Tomcat server on the VM.
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image008.png?raw=true)
 
 11. Navigate to the URL and you should see your app deployed!!!
+![](https://github.com/hsachinraj/vsts-javavmlabs/blob/master/HoLs/images/azure/image009.png?raw=true)
