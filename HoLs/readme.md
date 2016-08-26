@@ -19,7 +19,7 @@ The virtual machine contains the following pre-configured software:
 - Oracle MySQL 5.6.28
 - Apache Tomcat 7.0.52
 - Apache Maven 3.0.5
-- Git 1.9.1
+- Git 2.9.3
 - Gradle 2.7
 - NPM 3.3.12
 - Node.js 5.5.0
