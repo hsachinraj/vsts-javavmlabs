@@ -11,10 +11,10 @@ The virtual machine contains the following pre-configured software:
 
 - Ubuntu Linux 14.04 LTS
 - Eclipse Java EE IDE for Web Developers Mars Release 4.5.0
-- Microsoft Team Explorer Everywhere Plug-in for Eclipse 14.02.201512281640
+- Microsoft Team Explorer Everywhere Plug-in for Eclipse 14.0.3.201603291051
 - Visual Studio Code 0.10.6
 - Microsoft VSTS Cross Platform Build and Release Agent 1.999.0
-- Firefox 44
+- Firefox 48
 - Oracle Java 1.7.0\_05
 - Oracle MySQL 5.6.28
 - Apache Tomcat 7.0.52
