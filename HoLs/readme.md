@@ -46,13 +46,4 @@ Target Audience
 -----------------------------------------
 The image and the accompanying hand-on-labs is for technical audience. As such, familiarity with Visual Studio Team Services, Java and Linux operating system would be preferred although it is not a strict prerequisite.
 
-Acquiring the VSTS for Java Linux VM 2016
------------------------------------------
 
-In order to run on Azure, you will need to add the VHD to your Azure storage and use it as an image and create VM based on the image:
-
-
-
-
-
-You are now ready to start using the VM!!!
